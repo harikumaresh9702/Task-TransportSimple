@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transport Simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/fontawesome-free-5.15.1-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerComplete">
+        <div class="headerLogo">
+          <img src="images/transportsimple.png"  />
+        </div>
+        <div class="searchSection">
+          <div class="filterSection">
+            <select class="selectCategory">
+              <option>All</option>
+            </select>
+            <input type="text" placeholder="Search.." class="searchCategory" />
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="logoutSection">
+          <div class="logoutImage">
+            <div class="notification"><i class="far fa-bell"></i><i class="fas fa-user-circle"></i></div>
+            <div class="fa-barsOpen" id="navOpen"><i class="fas fa-bars"></i></div>
+             </div>
+          <div class="logoutUserOne dropdown">
+            <span>Transport Simple</span>&nbsp<i class="fas fa-caret-down"></i>
+            <div class="dropdownMenu">
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="navbar" id="nav">
+        <a href="#">Main1 </a>
+        <a href="#"><i class="fas fa-rocket"></i> Main2 </a>
+        <a href="#">Main3 </a>
+        <a href="#">Main4 </a>
+        <a href="#">Main5 </a>
+        <a href="#">Main6 </a>
+        <a href="#">Main7 </a>
+        <a href="#">Main8 </a>
+        <div class="logoutUserTwo dropdown">
+          <i class="fas fa-user-circle"></i><span>Transport Simple</span>&nbsp<i class="fas fa-caret-down"></i>
+          <div class="dropdownMenu">
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <article>
+      <div class="summaryComplete">
+        <div class="summarySection"><h3>Summary</h3></div>
+        <input type="date" class="summaryDate" />
+      </div>
+      <!--  -->
+      <div class="bankDetails">
+        <div class="row">
+          <div class="col-sm-2">
+            <label>Acc No:</label>
+            <span>1234567890QWERTY</span>
+          </div>
+          <div class="col-sm-2">
+            <label>Branch:</label>
+            <span>Kasthuri Nagar Branch</span>
+          </div>
+          <div class="col-sm-2 lefttextMove">
+            <button class="btn btn-success">Active</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <label>Acc Holder:</label>
+            <span>Jasdeep Singh</span>
+          </div>
+          <div class="col-sm-2">
+            <label>IFSC:</label>
+            <span>HDFC1234</span>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <label>Bank:</label>
+            <span>HDFC</span>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2"></div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="rows">
+        <div class="col-sm-2">
+          <div class="openingBalance">
+            <div class="row">
+              <div class="col-sm-2"><h4>Opening Balance</h4></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2">Rs 20,000</div>
+              <div class="col-sm-2 lefttextMove"><i class="fas fa-money-bill-wave"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="inBalance">
+            <div class="row">
+              <div class="col-sm-2"><h4>In Balance</h4></div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-2"> <h4>In Balance</h4></i></div>
+              <div class="col-sm-2"></div>
+            </div>
+            <div class="row ">
+              <div class="col-sm-2">Rs 20,000</div>
+              <div class="col-sm-2 lefttextMove"><i class="fas fa-money-bill-wave"></i></div>
+              <div class="col-sm-2">Rs 20,000</div>
+              <div class="col-sm-2 lefttextMove"><i class="fas fa-money-bill-wave"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="closingBalance">
+            <div class="row">
+              <div class="col-sm-2"><h4>Ending Balance</h4></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2">Rs 20,000</div>
+              <div class="col-sm-2 lefttextMove"><i class="fas fa-money-bill-wave"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="reportSection">
+        <!--  -->
+        <div class="row">
+          <div class="col-sm-2">Cash Summary</div>
+          <div class="col-sm-2 lefttextMove">
+            <select class="selectCategory">
+              <option>January</option>
+              <option>February</option>
+            </select>
+            <select class="selectCategory">
+              <option>January</option>
+              <option>February</option>
+            </select>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!--  -->
+        <div class="graph">
+          <div id="container"></div>
+        </div>
+        <!--  -->
+        <div class="transactionTable">
+          <div class="tableOne">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Transaction Details</th>
+                  <th>Withdrawals</th>
+                  <th>Deposited</th>
+                  <th>Running Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>29/12/2021</td>
+                  <td>IIN/I-Debit/Citrus Pa/xxx93711</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                </tr>
+                <tr>
+                  <td>29/12/2021</td>
+                  <td>IIN/I-Debit/Citrus Pa/xxx93711</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                </tr>
+                <tr>
+                  <td>29/12/2021</td>
+                  <td>IIN/I-Debit/Citrus Pa/xxx93711</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                </tr>
+                <tr>
+                  <td>29/12/2021</td>
+                  <td>IIN/I-Debit/Citrus Pa/xxx93711</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!--  -->
+        <div class="transactionTable">
+          <div class="tableTwo">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Select</th>
+                  <th>Date Of Bill</th>
+                  <th>Bill Number</th>
+                  <th>Due Date</th>
+                  <th>Bill Amount</th>
+                  <th>Amount Due</th>
+                  <th>Adjustment</th>
+                  <th>Withhold</th>
+                  <th>Balance</th>
+                  <th>Amount Paid</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>29/12/2021</td>
+                  <td>123456</td>
+                  <td>29/12/2021</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><input type="Text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>29/12/2021</td>
+                  <td>123456</td>
+                  <td>29/12/2021</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><input type="Text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>29/12/2021</td>
+                  <td>123456</td>
+                  <td>29/12/2021</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><input type="Text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>29/12/2021</td>
+                  <td>123456</td>
+                  <td>29/12/2021</td>
+                  <td>5000</td>
+                  <td>5000</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><input type="Text" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </article>
+    <button id="backButton">Back</button>
+  </body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/header.js"></script>
+</html>

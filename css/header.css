@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f4f6f9;
+}
+.headerComplete {
+  width: 100%;
+  display: flex;
+  background-color: rgb(89, 95, 171);
+}
+.headerLogo {
+  flex: 30%;
+  padding: 5px 5px 5px 15px;
+}
+.headerLogo img {
+  height: 40px;
+  width: 200px;
+}
+.searchSection {
+  flex: 50%;
+  padding: 10px 5px 5px 5px;
+}
+.logoutSection {
+  flex: 20%;
+  padding: 10px 5px 5px 5px;
+  display: flex;
+}
+.filterSection {
+  background-color: white;
+  width: 80%;
+}
+.selectCategory {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  margin-top: 1px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: rgba(240, 235, 235, 0.9);
+}
+.searchCategory {
+  height: 30px;
+  width: 330px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+.log .fa-search {
+  color: rgba(59, 56, 56, 0.37);
+}
+.fa-bell,
+.fa-user-circle,
+.fa-bars {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.fa-barsOpen,
+.fa-barsClose {
+  display: none;
+}
+
+.logoutUserOne {
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 3px;
+}
+.logoutUserTwo {
+  display: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(240, 235, 235, 0.9);
+}
+.dropdownMenu a {
+  padding: 15px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+.dropdown:hover .dropdownMenu {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.navbar a {
+  flex: 1;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(153, 148, 148);
+  border-bottom: 2px solid white;
+}
+.navbar a:hover {
+  color: rgba(87, 35, 117, 0.9);
+  border-bottom: 2px solid rgba(87, 35, 117, 0.9);
+  cursor: pointer;
+}
+.navbar a:active {
+  color: rgba(235, 240, 241, 0.9);
+}
+.navbar .fas {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 700px) {
+  .display {
+    display: block;
+  }
+  .displayNone {
+    display: none;
+  }
+  .displayFlex {
+    display: flex;
+  }
+  .headerComplete {
+    width: 100%;
+    background-color: rgb(89, 95, 171);
+  }
+  .filterSection {
+    display: block;
+  }
+  .headerLogo {
+    padding: 5px 5px 5px 15px;
+  }
+
+  .logoutSection {
+    padding: 10px 5px 5px 5px;
+    font-size: 5px;
+  }
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+  }
+  .navbar a {
+    flex: wrap;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(153, 148, 148);
+    border-bottom: 2px solid white;
+  }
+  .headerComplete {
+    flex: 100%;
+    display: flex;
+    background-color: rgb(89, 95, 171);
+  }
+  .logoutUser span {
+    display: none;
+  }
+  .headerLogo {
+    flex: 40%;
+    padding: 5px 5px 5px 15px;
+  }
+  .headerLogo img {
+    height: 40px;
+    width: 100px;
+  }
+  .searchSection {
+    display: block;
+  }
+
+  .selectCategory {
+    height: 30px;
+    width: 40px;
+    padding-left: 10px;
+    margin-top: 1px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: rgba(240, 235, 235, 0.9);
+  }
+  .searchCategory {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+  }
+  .log .fa-search {
+    color: rgba(59, 56, 56, 0.37);
+  }
+  .notification {
+    display: none;
+  }
+  .fa-barsOpen {
+    display: block;
+    text-align: right;
+  }
+
+  .fa-bell,
+  .fa-user-circle {
+    color: rgb(89, 95, 171);
+    font-size: 25px;
+    margin-left: 20px;
+    display: block;
+  }
+  .logoutUserOne {
+    display: none;
+  }
+  .logoutUserTwo {
+    flex: 1;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(89, 95, 171);
+    border-bottom: 2px solid white;
+    display: block;
+  }
+}

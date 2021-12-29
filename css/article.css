@@ -1,0 +1,167 @@
+article {
+  padding: 20px;
+}
+.summaryComplete {
+  display: flex;
+}
+.summarySection {
+  flex: 80%;
+}
+.summaryDate {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  margin-top: 1px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.bankDetails {
+  margin-top: 20px;
+  background-color: white;
+}
+.rows {
+  display: flex;
+  padding: 10px 0px;
+}
+.row {
+  display: flex;
+  padding: 10px;
+}
+.col-sm-2 {
+  flex: 1;
+}
+.btn {
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.btn-success {
+  background-color: rgba(24, 143, 24);
+  color: white;
+}
+label {
+  font-weight: bold;
+}
+.openingBalance {
+  width: 90%;
+  background-color: rgb(129, 144, 255);
+  color: white;
+  padding: 10px;
+}
+.closingBalance {
+  width: 95%;
+  background-color: rgb(255, 144, 86);
+  color: white;
+  padding: 10px;
+  margin-right: 10%;
+}
+.inBalance {
+  width: 90%;
+  background-color: rgb(255, 95, 131);
+  color: white;
+  padding: 10px;
+}
+.reportSection {
+  background-color: white;
+  padding: 10px;
+}
+#container {
+  margin-top: 20px;
+}
+.transactionTable {
+  padding: 10px;
+}
+.tableOne,
+.tableTwo {
+  border: 1px solid rgb(241, 236, 236);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgb(241, 236, 236);
+}
+table,
+th,
+td {
+  border-bottom: 1px solid rgb(241, 236, 236);
+  border-collapse: collapse;
+  text-align: center;
+}
+td,
+th {
+  padding: 10px;
+}
+.table {
+  width: 100%;
+}
+.tableOne tr:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+input [type="checkbox"] {
+  height: 40px;
+  width: 40px;
+}
+.tableTwo input[type="text"] {
+  width: 100px;
+  height: 20px;
+  border: 1px solid rgb(241, 236, 236);
+  outline: none;
+  padding: 5px;
+}
+#backButton {
+  padding: 6px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  background-color: none;
+  border: 1px solid rgba(87, 35, 117, 0.9);
+}
+.lefttextMove {
+  text-align: right;
+  padding-right: 15px;
+}
+.borderRight {
+  border-right: 1px solid white;
+}
+.fa-money-bill-wave {
+  color: rgba(227, 225, 220, 0.6);
+  font-size: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .rows {
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .openingBalance {
+    width: 92%;
+    background-color: rgb(129, 144, 255);
+    color: white;
+    padding: 10px;
+  }
+  .closingBalance {
+    width: 92%;
+    background-color: rgb(255, 144, 86);
+    color: white;
+    padding: 10px;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+  .inBalance {
+    width: 92%;
+    margin-top: 10px;
+    background-color: rgb(255, 95, 131);
+    color: white;
+    padding: 10px;
+  }
+  .tableOne,
+  .tableTwo {
+    max-width: 600px;
+    overflow: auto;
+  }
+  .bankDetails .row {
+    flex-direction: column;
+  }
+  .bankDetails .lefttextMove {
+    text-align: left;
+  }
+}
