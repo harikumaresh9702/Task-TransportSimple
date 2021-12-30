@@ -64,7 +64,18 @@ body {
 .fa-barsClose {
   display: none;
 }
-
+.logoutImage {
+  display: flex;
+}
+.fa-bell {
+  padding-top: 2px;
+  padding-right: 6px;
+}
+.notification img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
 .logoutUserOne {
   color: white;
   font-size: 18px;
@@ -115,9 +126,11 @@ body {
 .navbar a:active {
   color: rgba(235, 240, 241, 0.9);
 }
-.navbar .fas {
+.navbar .fas,
+.navbar .fab {
   margin-right: 10px;
 }
+
 @media only screen and (max-width: 700px) {
   .display {
     display: block;
@@ -147,9 +160,9 @@ body {
     width: 100%;
     flex-direction: column;
     background-color: white;
+    transition: 5s;
   }
   .navbar a {
-    flex: wrap;
     padding: 10px;
     text-decoration: none;
     text-align: left;
@@ -203,6 +216,7 @@ body {
   .fa-barsOpen {
     display: block;
     text-align: right;
+    padding-right: 10px;
   }
 
   .fa-bell,
@@ -223,5 +237,32 @@ body {
     color: rgb(89, 95, 171);
     border-bottom: 2px solid white;
     display: block;
+  }
+  #cDropdownmenu {
+    position: absolute;
+    background-color: rgba(240, 235, 235, 0.9);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #cDropdown {
+    position: relative;
+    display: flex;
+  }
+  #cDropdownMenu a {
+    padding: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+  }
+  #dropFlex {
+    display: flex;
+  }
+  #dropFlex img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid Black;
+    padding: 2px;
   }
 }
